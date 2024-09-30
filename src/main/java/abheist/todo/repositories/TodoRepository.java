@@ -53,7 +53,7 @@ public class TodoRepository {
                     rs.getString("title"),
                     rs.getString("description"),
                     rs.getBoolean("completed"),
-                    rs.getTimestamp("created").toLocalDateTime()
+                    rs.getTimestamp("created_at").toLocalDateTime()
             );
         }
     }
